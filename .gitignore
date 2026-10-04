@@ -1,0 +1,37 @@
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+.git-old/
+
+# Dependencies
+/vendor/
+
+# CodeIgniter writable runtime files
+/writable/cache/*
+!/writable/cache/index.html
+/writable/logs/*
+!/writable/logs/index.html
+/writable/session/*
+!/writable/session/index.html
+/writable/uploads/*
+!/writable/uploads/index.html
+/writable/debugbar/*
+!/writable/debugbar/index.html
+/writable/
+
+# IDE and operating-system files
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Test and build output
+/tests/coverage*
+/build/
+/builds/
+/results/
+/phpunit
+php_errors.log

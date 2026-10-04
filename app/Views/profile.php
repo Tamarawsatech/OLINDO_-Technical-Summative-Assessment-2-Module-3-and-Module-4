@@ -1,0 +1,4 @@
+<?= view('templates/header', ['pageTitle' => 'Profile']) ?>
+<div class="mb-4"><p class="text-primary fw-semibold mb-1">Demo account</p><h1 class="display-6 fw-bold mb-0">Profile</h1></div>
+<?php if ($user === null): ?><div class="alert alert-info">No user exists in the database.</div><?php else: ?><div class="card border-0 shadow-sm"><div class="card-body p-4 p-md-5"><dl class="row mb-0"><dt class="col-sm-4">Full name</dt><dd class="col-sm-8"><?= esc($user['full_name']) ?></dd><dt class="col-sm-4">Username</dt><dd class="col-sm-8"><?= esc($user['username']) ?></dd><dt class="col-sm-4">Email</dt><dd class="col-sm-8"><?= esc($user['email']) ?></dd><dt class="col-sm-4">Creation date</dt><dd class="col-sm-8 mb-0"><?= esc($user['created_at']) ?></dd></dl></div></div><?php endif; ?>
+<?= view('templates/footer') ?>
